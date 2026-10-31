@@ -1,0 +1,52 @@
+{
+  "models": [
+    {
+      "slug": "claude-haiku-5-5",
+      "display_name": "Claude Haiku 5.5",
+      "context_window": 200000,
+      "max_output_tokens": 32000,
+      "input_modalities": ["image", "text", "image", "audio"],
+      "supported_reasoning_levels": [
+        {
+          "effort": "none"
+        },
+        {
+          "effort": "low"
+        },
+        {
+          "effort": "high"
+        }
+      ],
+      "supports_reasoning_effort_updates": true
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT 6 Luna",
+      "max_context_window": 1000000,
+      "max_completion_tokens": 64000,
+      "input_modalities": ["text", "image"],
+      "supported_reasoning_levels": ["low", "medium", "high", "xhigh"],
+      "service_tiers": [
+        {
+          "id": "priority",
+          "name": "Fast"
+        }
+      ]
+    },
+    {
+      "slug": "grok-composer-2.5-fast",
+      "max_tokens": 8192
+    },
+    {
+      "id": "kimi-k3.1-pro"
+    },
+    {
+      "id": "hidden-model",
+      "visibility": "hide",
+      "service_tiers": ["priority"]
+    },
+    {
+      "id": ""
+    }
+  ]
+}

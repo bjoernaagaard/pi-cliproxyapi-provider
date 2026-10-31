@@ -1,0 +1,6 @@
+event: response.web_search_call.searching
+data: {"type":"response.web_search_call.searching","item_id":"ws_1"}
+
+event: error
+data: {"type":"error","error":{"message":"Search backend exploded"}}
+

@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and tool output
+dist/
+build/
+out/
+coverage/
+*.tsbuildinfo
+.cache/
+.turbo/
+.eslintcache
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+
+# Secrets: values live in Bitwarden Secrets Manager, never in the repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+client_secret*.json
+credentials*.json
+token*.json
+.secretspec/
+
+# Local mise overrides
+mise.local.toml
+.mise.local.toml
+
+# Runtime state: chat log, memory tree, durable storage, flow journals
+data/
+state/
+inbox/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+.flows/
+
+# SimpleX chat database and files
+simplex/
+*_chat.db
+*_agent.db
+
+# Browser profiles and downloads
+profiles/
+.browser/
+downloads/
+
+# Scratch
+tmp/
+.tmp/
+*.tmp
+
+# Editors and agents
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*~
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test output
+test/output/
+test/core/output/
+test-output/
+.agents
+
+# Unit test output, regenerated on every run
+test/extension/output/
